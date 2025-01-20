@@ -1,4 +1,4 @@
-package br.com.gmalheiro.java_caching;
+package br.com.gmalheiro.java_caching.service;
 
 import br.com.gmalheiro.java_caching.entity.Product;
 import org.springframework.cache.annotation.Cacheable;
