@@ -1,6 +1,7 @@
 package br.com.gmalheiro.java_caching;
 
 import br.com.gmalheiro.java_caching.entity.Product;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -18,6 +19,7 @@ public class ProductService {
         }
     };
 
+    @Cacheable("products")
     public Product getById(Long id) {
         System.out.println("Finding products...");
         simulateLatency();
